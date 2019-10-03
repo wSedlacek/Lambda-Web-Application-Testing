@@ -64,7 +64,7 @@ test('a `foul` increases strikes up to 2, but no further', () => {
   expect(scoreBoard.outs).toBe(0);
 });
 
-test('balls and strikes reset to 0 when a player reaches 4 balls and outs increases', () => {
+test('balls and strikes reset to 0 when a player reaches 4 balls', () => {
   const { result } = renderHook(() => useScoreBoard());
 
   for (let i = 0; i < 4; i++) {
